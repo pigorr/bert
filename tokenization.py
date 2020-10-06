@@ -122,6 +122,7 @@ def load_vocab(vocab_file):
   """Loads a vocabulary file into a dictionary."""
   vocab = collections.OrderedDict()
   index = 0
+  """
   with tf.io.gfile.GFile(vocab_file, "r") as reader:
     while True:
       token = convert_to_unicode(reader.readline())
@@ -131,6 +132,7 @@ def load_vocab(vocab_file):
       vocab[token] = index
       index += 1
   return vocab
+  """
 
 
 def convert_by_vocab(vocab, items):
