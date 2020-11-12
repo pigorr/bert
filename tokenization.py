@@ -131,6 +131,7 @@ def load_vocab(vocab_file):
       token = token.strip()
       vocab[token] = index
       index += 1
+  print(vocab.len())
   return vocab
 
 
